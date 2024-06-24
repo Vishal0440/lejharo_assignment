@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 .home-page {
   display: flex;
   flex-direction: column;
@@ -210,6 +213,13 @@ img {
   display: flex;
   gap: 10px;
 }
-.copyright {
-  text-align: center;
+.copy{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+}
+.up{
+  position: sticky;
+  font-size: 1.8rem;
+  color: #3a3632;
 }

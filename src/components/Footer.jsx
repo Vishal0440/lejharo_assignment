@@ -36,7 +36,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="copy">
+        <p></p>
       <p className="copyright">© 2024 LEJHRO. All Rights Reserved.</p>
+      <a className="up" href="#header"><i class="fa-sharp fa-solid fa-circle-up"></i></a>
+      </div>
     </div>
   );
 };

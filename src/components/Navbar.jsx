@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
       <div className="home-page">
-        <div className="header">
+        <div className="header" id="header">
           <div className="top-header">
             <a href="#">
               <img
