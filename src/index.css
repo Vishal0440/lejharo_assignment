@@ -110,6 +110,10 @@ html{
   color: #3a3632;
   text-decoration: none;
 }
+.sidebar-social-icon a{
+  color: #3a3632;
+  font-size: 22px;
+}
 .sidebar a:hover {
   color: rgb(50, 128, 205);
 }
@@ -178,14 +182,6 @@ img {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1024px) {
-  .footer-container {
-    flex-wrap: wrap;
-  }
-  .menu {
-    display: none;
-  }
-}
 
 .footer-section {
   display: flex;
@@ -213,6 +209,9 @@ img {
   display: flex;
   gap: 10px;
 }
+.social-icon a{
+  font-size: 22px;
+}
 .copy{
   display: flex;
   justify-content: space-between;
@@ -222,4 +221,97 @@ img {
   position: sticky;
   font-size: 1.8rem;
   color: #3a3632;
+}
+
+
+/* responsive design  */
+
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    height: max(30vh, 150px) ;
+    padding: 6.631vh 6.02vw !important;
+  }
+  .top-header img {
+    height: 25px;
+  }
+  .blogs {
+    font-size: 2.5rem;
+  }
+  /* .....sidebar ........ */
+
+  .sidebar-header{
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sidebar-logo img{
+    height: 25px;
+  }
+  .sidebar-close{
+    width: 50px;
+    height: 50px;
+    padding: 8px 14px;
+    border-radius: 50%;
+    border: 3px solid black;
+  }
+  .sidebar-menu a {
+    padding-left: 50px;
+  }
+  .sidebar-social-icon{
+    padding-left: 50px;
+    margin-top: 30px;
+    color: black;
+  }
+  
+
+  /* ......Blog section..........  */
+.blog-content {
+  padding: 6.631vh 6.02vw;
+}
+.blog-container {
+  border-radius: 40px;
+  padding: 20px;
+}
+.h1 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  font-size: 22px;
+  font-family: sans-serif;
+}
+.fw-bold {
+  margin-top: 30px;
+  margin-bottom: 1.5em;
+}
+p {
+  font-weight: 500;
+}
+/* ...........Footer section.............  */
+.footer-body {
+  padding: 6.631vh 6.02vw;
+}
+.footer-container {
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-bottom: 10px;
+
+}
+.footer-section a {
+  font-size: 18px;
+}
+.social-icon {
+  display: flex;
+  gap: 10px;
+  font-size: 22px;
+}
+.copy{
+  padding: 10px 15px;
+}
 }
